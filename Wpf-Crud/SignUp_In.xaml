@@ -1,0 +1,39 @@
+﻿<Page x:Class="Wpf_Crud.SignUp_In"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Wpf_Crud"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SignUp_In">
+
+    <Grid Background="#FF263238">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="64*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="43,47,0,0" VerticalAlignment="Top" Background="{x:Null}" RenderTransformOrigin="0.13,0.462" Grid.RowSpan="2" Foreground="White"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="40,20,0,0" VerticalAlignment="Top" Grid.Row="1" Foreground="White"/>
+        <TextBox Name="email_tb" HorizontalAlignment="Left" Margin="121,51,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.RowSpan="2"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="40,59,0,0" VerticalAlignment="Top" Grid.Row="1" Foreground="White"/>
+        <TextBox Name="firstName_tb" HorizontalAlignment="Left" Margin="121,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+        <Label  Content="Last Name" HorizontalAlignment="Left" Margin="41,94,0,0" VerticalAlignment="Top" Grid.Row="1" Foreground="White"/>
+        <TextBox Name="lastName_tb" HorizontalAlignment="Left" Margin="121,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+        <Label Content="Roll" HorizontalAlignment="Left" Margin="40,128,0,0" VerticalAlignment="Top" Grid.Row="1" Foreground="White"/>
+        <TextBox Name="roll_tb" HorizontalAlignment="Left" Margin="121,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+
+
+        <PasswordBox Name="password_tb" HorizontalAlignment="Left" Margin="121,24,0,0" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+        <Label Content="Sign Up" HorizontalAlignment="Left" Margin="55,15,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.561,0.732" Foreground="White"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="542,2,0,0" VerticalAlignment="Top" Background="{x:Null}" Grid.Row="1" Foreground="White"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="531,68,0,0" VerticalAlignment="Top" Grid.Row="1" Foreground="White"/>
+        <TextBox Name="SignInemail_tb" HorizontalAlignment="Left" Margin="614,6,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+        <PasswordBox Name="SignInPass_tb" HorizontalAlignment="Left" Margin="614,72,0,0" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+        <Label Content="Sign In" HorizontalAlignment="Left" Margin="572,15,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button Content="Sign In" Name="SignInBtn" HorizontalAlignment="Left" Margin="614,172,0,0" Grid.Row="1" VerticalAlignment="Top" Click="SignInBtn_Click" Width="120" Foreground="White" Background="#FF181C23"/>
+        <Button Content="Sign Up" Name="SignUpBtn" HorizontalAlignment="Left" Margin="121,177,0,0" Grid.Row="1" VerticalAlignment="Top" Click="SignUpBtn_Click" Width="120" Background="#FF181C23" Foreground="White"/>
+
+
+    </Grid>
+</Page>

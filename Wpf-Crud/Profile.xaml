@@ -1,0 +1,44 @@
+﻿<Page x:Class="Wpf_Crud.Profile"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Wpf_Crud"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Profile">
+
+    <Grid Background="#FF263238">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="757*"/>
+            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="22*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblName"  Content="Name:" HorizontalAlignment="Left" Margin="47,73,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.131,0.572" Background="Transparent" Foreground="White"/>
+        <Label x:Name="lblRoll" Content="Roll:" HorizontalAlignment="Left" Margin="47,133,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.131,0.572" Width="44" Foreground="White"/>
+        <TextBox x:Name="firstName" HorizontalAlignment="Left" Margin="100,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132" Height="22"/>
+        <TextBox x:Name="studentRoll" HorizontalAlignment="Left" Margin="100,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132" Height="22"/>
+        <Button  x:Name="btnSaveStudent" Content="Save Student" HorizontalAlignment="Left" Margin="100,175,0,0" VerticalAlignment="Top" Width="132" Click="btnSaveStudent_Click" Background="#FF181C23" Foreground="White"/>
+        <DataGrid x:Name="dgStudent" AutoGenerateColumns="False" Margin="246,88,12,36" Grid.ColumnSpan="2" Background="#FFA1B9CF">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding StudentId}"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+                <DataGridTextColumn  Header="Roll" Binding="{Binding Roll}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnUpdateStudent" Content="Update Student" Click="btnUpdateStudent_Click" HorizontalAlignment="Left" Margin="431,53,0,0" VerticalAlignment="Top" Width="150" Foreground="White" Background="#FF181C23"/>
+        <Button x:Name="btnLoadStudents" Content="Load Students" HorizontalAlignment="Left" Margin="246,53,0,0" VerticalAlignment="Top" Width="150" Click="btnLoadStudents_Click" Foreground="White" Background="#FF181C23"/>
+        <Button x:Name="btnDeleteStudent" Content="Delete Student" HorizontalAlignment="Left" Margin="616,53,0,0" VerticalAlignment="Top"  Width="150" Click="btnDeleteStudent_Click" Grid.ColumnSpan="2" Background="#FF181C23" Foreground="White">
+
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.124"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+    </Grid>
+</Page>

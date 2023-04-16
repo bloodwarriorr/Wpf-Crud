@@ -1,0 +1,15 @@
+﻿<Window x:Class="Wpf_Crud.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Crud"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000" WindowStyle="None" ResizeMode="NoResize">
+    <Grid Background="#282c34">
+        <Button Name="Exitbtn" Click="Exit" Content="X" HorizontalAlignment="Left" Margin="959,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.027,0.409" FontSize="14" Width="18" Foreground="White" Background="#FF181C23"/>
+        <Frame Content="Frame" Name="frame" Margin="0,41,0,-41" NavigationUIVisibility="Hidden"/>
+        <Button x:Name="MinimizeApp" Click="Minimize" Content="_" HorizontalAlignment="Left" Margin="900,10,0,0" VerticalAlignment="Top" FontSize="14" Width="18" Background="#FF181C23" Foreground="White"/>
+        <Button x:Name="MaximizeApp" Click="Maximize" Content="▢" HorizontalAlignment="Left" Margin="930,10,0,0" VerticalAlignment="Top" FontSize="14" Width="18" Background="#FF181C23" Foreground="White"/>
+    </Grid>
+</Window>
